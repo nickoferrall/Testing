@@ -2,14 +2,6 @@ const helpers = require('./project-1');
 
 // start testing!
 
-test('Should run test', () => {
-
-})
-
-it('Should run tests using it instead of test', () => {
-
-})
-
 describe('multiplyByTen', () => {
     it('Should multiply provided number by ten', () => {
         const expected = 100;
@@ -155,12 +147,14 @@ it('Should get the triangle area', () => {
     expect(actual).toEqual(expected);
 })
 
-// it('Should multiply radius by radius and pi', () => {
-//     const radius = 4;
-//     const expected = 50.265482457;
-//     const actual = helpers.getTriangleArea(radius);
-//     expect(actual).toEqual(expected);
-// })
+it('Should multiply radius by radius and pi', () => {
+    const radius = 4;
+    const expectedLower = 50;
+    const expectedUpper = 51;
+    const actual = helpers.getCircleArea(radius);
+    expect(actual).toBeGreaterThanOrEqual(expectedLower)
+    expect(actual).toBeLessThan(expectedUpper)
+})
 
 it('Should multiple the width, height and length inputs', () => {
     const length = 10;
