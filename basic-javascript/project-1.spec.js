@@ -6,7 +6,7 @@ test('Should run test', () => {
 
 })
 
-it('Should run tests using it instead of test.', () => {
+it('Should run tests using it instead of test', () => {
 
 })
 
@@ -52,3 +52,121 @@ it('Should add the two inputs', () => {
     expect(actual).toEqual(expected);
 });
 
+it('Should subtract the inputs', () => {
+    const num1 = 10;
+    const num2 = 5;
+    const expected = 5;
+    const actual = helpers.subtract(num1, num2);
+    expect(actual).toEqual(expected);
+});
+
+it('Should divide the inputs', () => {
+    const num1 = 10;
+    const num2 = 5;
+    const expected = 2;
+    const actual = helpers.divide(num1, num2);
+    expect(actual).toEqual(expected);
+});
+
+it('Should multiply the inputs', () => {
+    const num1 = 10;
+    const num2 = 5;
+    const expected = 50;
+    const actual = helpers.multiply(num1, num2);
+    expect(actual).toEqual(expected);
+});
+
+it('Should get remainder of the inputs', () => {
+    const num1 = 10;
+    const num2 = 4;
+    const expected = 2;
+    const actual = helpers.getRemainder(num1, num2);
+    expect(actual).toEqual(expected);
+});
+
+// even
+
+// odd
+
+it('Should square of the input', () => {
+    const num = 3;
+    const expected = 9;
+    const actual = helpers.square(num);
+    expect(actual).toEqual(expected);
+});
+
+it('Should cube the input', () => {
+    const num = 3;
+    const expected = 27;
+    const actual = helpers.cube(num);
+    expect(actual).toEqual(expected);
+});
+
+it('Should raise the first imput to the power of the second input', () => {
+    const num = 4;
+    const exponent = 3
+    const expected = 64;
+    const actual = helpers.raiseToPower(num, exponent);
+    expect(actual).toEqual(expected);
+});
+
+it('Should round the input', () => {
+    const num = 5.5;
+    const expected = 6;
+    const actual = helpers.roundUp(num);
+    expect(actual).toEqual(expected);
+})
+
+it('Should add an exclamation point to the string', () => {
+    const myStr = 'Wow';
+    const expected = 'Wow!';
+    const actual = helpers.addExclamationPoint(myStr);
+    expect(actual).toEqual(expected);
+})
+
+it('Should combine two strings', () => {
+    const firstName = 'Kanye';
+    const secondName = 'West';
+    const expected = 'Kanye West';
+    const actual = helpers.combineNames(firstName, secondName);
+    expect(actual).toEqual(expected);
+})
+
+it('Should add Hello before input and exclamation point afterwards', () => {
+    const name = 'Kanye';
+    const expected = 'Hello Kanye!';
+    const actual = helpers.getGreeting(name);
+    expect(actual).toEqual(expected);
+})
+
+it('Should multiply the length and width inputs', () => {
+    const length = 5;
+    const width = 4;
+    const expected = 20;
+    const actual = helpers.getRectangleArea(length, width);
+    expect(actual).toEqual(expected);
+})
+
+it('Should get the triangle area', () => {
+    const base = 5;
+    const height = 4;
+    const expected = 10;
+    const actual = helpers.getTriangleArea(base, height);
+    expect(actual).toEqual(expected);
+})
+
+// it('Should multiply radius by radius and pi', () => {
+//     const radius = 4;
+//     const expected = 50.265482457;
+//     const actual = helpers.getTriangleArea(radius);
+//     expect(actual).toEqual(expected);
+// })
+
+it('Should multiple the width, height and length inputs', () => {
+    const length = 10;
+    const width = 5;
+    const height = 4;
+    const expected = 200;
+    const actual = helpers.getRectangularPrismVolume(length, width, height);
+    expect(actual).toEqual(expected);
+})
