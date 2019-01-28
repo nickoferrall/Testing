@@ -27,8 +27,9 @@ it('Should subtract by 5', () => {
 it('Should check if they are the same length', () => {
     const str1 = 'Tom';
     const str2 = 'Ben';
-    console.log(areSameLength(str1, str2))
+    const answer = helpers.areSameLength(str1, str2);
     expect(str1.length).toEqual(str2.length);
+    expect(answer).toBeTruthy();
 })
 
 // it('Should check if they are the same', () => {
@@ -46,7 +47,8 @@ it('Should check if they are the same length', () => {
 it('Should add the two inputs', () => {
     const num1 = 10;
     const num2 = 5;
-    expected = 15;
-    actual = add(num1, num2);
+    const expected = 15;
+    const actual = helpers.add(num1, num2);
     expect(actual).toEqual(expected);
-})
+});
+
