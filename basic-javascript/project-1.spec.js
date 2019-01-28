@@ -24,17 +24,29 @@ it('Should check if they are the same length', () => {
     expect(answer).toBeTruthy();
 })
 
-// it('Should check if they are the same', () => {
-//     const str1 = 'Tom';
-//     const str2 = 'Tom';
-//     expect(str1).toBe(str2);
-// })
+it('Should check if they are the same', () => {
+    const str1 = 'Tom';
+    const str2 = 'Tom';
+    expect(str1).toBe(str2);
+})
 
+it('Should check if number is less than 90', () => {
+    const num1 = 85;
+    const num2 = 95 
+    const answer1 = helpers.lessThanNinety(num1);
+    const answer2 = helpers.lessThanNinety(num2);
+    expect(answer1).toBeTruthy();
+    expect(answer2).toBeFalsy();
+})
 
-// it('Should check if number is less than 90', () => {
-//     const num = 85;
-//     expect(num).toBeLessThan(90);
-// })
+it('Should check if number is greater than 50', () => {
+    const num1 = 55;
+    const num2 = 45; 
+    const answer1 = helpers.greaterThanFifty(num1);
+    const answer2 = helpers.greaterThanFifty(num2);
+    expect(answer1).toBeTruthy();
+    expect(answer2).toBeFalsy();
+})
 
 it('Should add the two inputs', () => {
     const num1 = 10;
@@ -76,7 +88,14 @@ it('Should get remainder of the inputs', () => {
     expect(actual).toEqual(expected);
 });
 
-// even
+it('Should get check if number is even', () => {
+    const num1 = 10;
+    const num2 = 11;
+    const answer1 = helpers.isEven(num1);
+    const answer2 = helpers.isEven(num2);
+    expect(answer1).toBeTruthy();
+    expect(answer2).toBeFalsy();
+});
 
 // odd
 
