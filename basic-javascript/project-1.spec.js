@@ -1,6 +1,8 @@
 const helpers = require('./project-1');
 
+// console.log('Is ten or five', helpers.isTenOrFive())
 // start testing!
+
 
 describe('multiplyByTen', () => {
     it('Should multiply provided number by ten', () => {
@@ -96,8 +98,6 @@ it('Should get check if number is even', () => {
     expect(answer1).toBeTruthy();
     expect(answer2).toBeFalsy();
 });
-
-// odd
 
 it('Should square of the input', () => {
     const num = 3;
